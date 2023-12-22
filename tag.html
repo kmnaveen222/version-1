@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <div class="navbar">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a>
+                    <ul class="store">
+                        <li><a href="#" >Mens</a></li>
+                        <li><a href="#"> Womens</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="offer"><img src="./image/123.jpg" alt="no image" width="1300" height="550px"></div>
+        <div class="video"><video width="820" height="400" controls autoplay>
+            <source src="./video/Clothing Brand Promotional Video(1080P_HD).mp4" type="video/mp4" >
+        </video>
+    </body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .video{
+        position: relative;
+        top: 20px;
+       left: 300px;
+    }
+    .offer{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    .nav{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        width: 150px;
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    a:hover{
+        background-color: skyblue;
+        border-radius: 0px;
+        color: white;
+    }
+    .store{
+        list-style-type: none;
+        display: none;
+    }
+    .nav li:nth-child(2):hover .store{
+        display: block;
+    }
+</style>
+</html>

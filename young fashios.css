@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0; 
+
+}
+body{
+    /* overflow-x: hidden; */
+}
+
+
+/* ---------------------------------Responsive @media START----------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        width: 1200px;
+    }
+    .navbar .nav .login-signup{
+        display:flex;
+        left: 200px;
+    }
+    .slider{
+        height: 300px;
+        width: 1000px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slider .slides{
+        height: 300px;
+        width: 1000px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .slide1 .bgimg img{
+        height: 300px;
+        width: 1000px;}
+        .slider .slides .slide img{
+            height: 300px;
+            width: 1000px;}
+            .slider .slides #radio1:checked ~ .slide1{
+                margin-left: 0;
+            }
+            .slider .slides #radio2:checked ~ .slide1{
+                margin-left: -1060px;
+            }
+            .slider .slides #radio3:checked ~ .slide1{
+                margin-left: -2120px;
+            }
+            .slider .slides #radio4:checked ~ .slide1{
+                margin-left: -3160px;
+            }
+            .slider .slides #radio5:checked ~ .slide1{
+                margin-left: -4220px;
+            }
+            .slider .slides #radio6:checked ~ .slide1{
+                margin-left: -5280px;
+            }
+
+        .slide1 .bgimg .middle{
+            position: absolute;
+            top: 15%;
+            left: 500px;
+            font-size: 17px;
+        }
+        .slide1 .bgimg .middle h1 p{
+            font-size: 40px;
+
+        }
+       .slider .manual{
+            position: absolute;
+            width: 1150px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .slider .slides .auto{
+            position: absolute;
+            width: 1150px;
+            margin-top: 310px;
+            display: flex;
+            justify-content: center;
+        }
+        .top-brand{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top:90px;
+            width: 1000px;
+        }
+        .top-brand h2{
+            width: 170px;
+        }
+        .faq{
+            position: relative;
+            left: 100px;
+            top:100px;
+          }
+
+    
+}
+
+
+/* ---------------------------------Responsive @media END----------------------------------------------*/
+
+/*-------------------------------------------menubar start----------------------------------------------------*/
+
+.navbar{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav{
+        display: flex;
+        
+        list-style-type: none;
+        
+    }
+    .nav li a{
+        
+        text-decoration: none;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        width: 100px;
+        margin-top: 13px;
+        margin-bottom: 5px;
+        padding: 3px 0px;
+        font-size: 20px;
+    }
+    .nav li a:hover{
+        border-bottom:2px solid #c430d7;
+        border-radius: 0px;
+        color: white;
+    }
+    .store{
+        list-style-type:none;
+        display: none;
+        
+    }
+    .nav li:nth-child(2):hover .store{
+        display: block;
+    }
+
+
+    a button{
+    
+        margin-left: 10px;
+    }
+ .login-signup{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+    left: 700px;
+ }
+
+#cart, #wishlist, #login-btn12{
+    position: relative;
+    padding-left: 25px;
+    top:5px;
+    right: 5px;
+    font-size: 30px;
+    color: #f1f1f1;
+}
+    /*---------------------------------------------menubar END-----------------------------------------------*/
+
+/*------------------------------------------------login form start----------------------------------------------*/
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0; right:-100% ;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.login-form-container.active{
+   right: 0;
+   background: rgba(255,255,255,0.8);
+   transition: 1s;
+}
+.login-form-container form{
+    background: white;
+    border: 1.6px solid rgb(0, 0, 0,0.1);
+    width: 450px;
+    padding: 32px;
+    box-shadow: 0 8px 16px rgb(0, 0, 0,0.1);
+    margin: 32px;
+}
+.login-form-container form h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+}
+.login-form-container form span{
+    display: block;
+    font-size: 24px;
+    padding-top:16px;
+}
+.login-form-container form .box{
+    width: 100%;
+    margin: 11.2px 0;
+    font-size: 17px;
+    border: 1.6px solid rgb(0, 0, 0,0.1);
+    border-radius: 8px;
+    padding: 16px 19px;
+    color: #444;
+}
+.login-form-container form .btn{
+    display: inline-block;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    background:linear-gradient(45deg,#df4881, #c430d7);
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    margin: 24px 0;
+}
+.login-form-container form .btn:hover{
+    background:linear-gradient(45deg,#a93461, #a729b8);
+}
+.login-form-container form #forget-pwd{
+    padding-top: 0px;
+    color: #666;
+    font-size: 17px;
+    text-decoration: none;
+    color:#df4881;
+}
+.login-form-container form p{
+    padding-top: 0px;
+    color: #666;
+    font-size: 17px;
+}
+.login-form-container form p a{
+    text-decoration: none;
+    color:#df4881;
+}
+.login-form-container #close-login-btn{
+    position: absolute;
+    top:20px; right: 32px;
+    font-size: 40px;
+    color: #444;
+    cursor: pointer;
+}
+/*------------------------------------------------login form end----------------------------------------------*/
+
+/*------------------------------------------------sign form start----------------------------------------------*/
+.sign-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0; right:-100% ;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.sign-form-container.active{
+   right: 0;
+   background: rgba(255,255,255,0.8);
+   transition: 1s;
+}
+.sign-form-container form{
+    background: white;
+    border: 1.6px solid rgb(0, 0, 0,0.1);
+    width: 450px;
+    padding: 32px;
+    box-shadow: 0 8px 16px rgb(0, 0, 0,0.1);
+    margin: 32px;
+}
+.sign-form-container form h3{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+}
+.sign-form-container form span{
+    display: block;
+    font-size: 18px;
+    padding-top:12px;
+}
+.sign-form-container form .box{
+    width: 100%;
+    margin: 2px 0;
+    font-size: 15px;
+    border: 1.6px solid rgb(0, 0, 0,0.1);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #444;
+}
+.sign-form-container form .btn{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    background:linear-gradient(45deg,#df4881, #c430d7);
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+}
+.sign-form-container form .btn:hover{
+    background:linear-gradient(45deg,#a93461, #a729b8);
+}
+.sign-form-container form p{
+    padding-top: 0px;
+    color: #666;
+    font-size: 17px;
+}
+.sign-form-container form p a{
+    text-decoration: none;
+    color:#df4881;
+}
+.sign-form-container #close-sign-btn{
+    position: absolute;
+    top:20px; right: 32px;
+    font-size: 40px;
+    color: #444;
+    cursor: pointer;
+}
+.sign-form-container form i{
+    position: absolute;
+    right: 570px;
+    margin-top: 15px;
+}
+/* .sign-form-container form.success input{
+    border-color: #2ecc71;
+}
+.sign-form-container form.error input{
+    border-color: red;
+}
+.sign-form-container form.success .fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;   
+}
+.sign-form-container form.error .fa-exclamation-circle{
+    color: red;
+    visibility: visible;   
+}
+.sign-form-container form.error .error-mes{
+    color: red;
+    visibility: visible;
+} */
+ 
+/*------------------------------------------------sign form END----------------------------------------------*/
+
+/*--------------------------------------- diwali offer front show ---------------------------------------*/
+
+  .bgimg{
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  .middle {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    
+  }
+  .middle-hd{
+    margin-bottom: 20px;
+  }
+  .middle h1 p{
+    font-size: 60px;
+    color: yellow;
+  }
+  .middle h1{
+margin: 20px;
+  }
+  hr {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;}
+    .offer-day sup{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.offer-day{
+font-family: Arial Black;
+color: yellow;
+}
+/*--------------------------------------- diwali offer front show end---------------------------------------*/
+
+
+/*------------------------------------------- slideshow start-----------------------------------------------*/
+.slider{
+    height: 500px;
+    width: 1500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    height: 500px;
+    width: 1500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide1, .slide{
+    width: 1500px;
+    transition: 2s;
+}
+.slide1 img, .slide img{
+    height: 500px;
+    width: 1470px;
+    margin: 30px;
+}
+.manual{
+    position: absolute;
+    width: 1500px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.manuals{
+    border: 2px solid black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+    margin-right: 30px;
+}
+.manuals:hover{
+    background-color: #c430d7;
+}
+#radio1:checked ~ .slide1{
+    margin-left: 0;
+}
+#radio2:checked ~ .slide1{
+    margin-left: -1500px;
+}
+#radio3:checked ~ .slide1{
+    margin-left: -3000px;
+}
+#radio4:checked ~ .slide1{
+    margin-left: -4500px;
+}
+#radio5:checked ~ .slide1{
+    margin-left: -6000px;
+}
+#radio6:checked ~ .slide1{
+    margin-left: -7500px;
+}
+
+/*-----auto scroll-----------*/
+.auto{
+    position:absolute;
+    width: 1500px;
+    margin-top: 540px;
+    display: flex;
+    justify-content: center;
+}
+.auto div{
+    border: 2px solid black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: 1s;
+    margin-right: 30px;
+}
+#radio1:checked ~ .auto .auto1{
+    background-color: #c430d7;
+}
+#radio2:checked ~ .auto .auto2{
+    background-color: #c430d7;
+}
+#radio3:checked ~ .auto .auto3{
+    background-color: #c430d7;
+}
+#radio4:checked ~ .auto .auto4{
+    background-color: #c430d7;
+}
+#radio5:checked ~ .auto .auto5{
+    background-color: #c430d7;
+}
+#radio6:checked ~ .auto .auto6{
+    background-color: #c430d7;
+}
+/*------------------------------------------- slideshow END-----------------------------------------------*/
+
+/* ----------------------------------Top products Start----------------------------------------------*/
+
+.top-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:90px;
+}
+.top-brand h2{
+    font-size: 2 0px;
+    background-image: linear-gradient(45deg,#df4881, #c430d7,#c450d2) ;
+    
+    padding: 20px 30px;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+}
+
+.container{
+    position: relative;
+    top:100px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit,minmax(180px,1fr));
+    grid-gap: 40px;
+    padding: 10px;
+}
+.container .card{
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.122);
+    border-radius: 5px;
+    background-color: white;
+width: 100%;
+}
+.container .card .imgbx{
+    position: relative;
+    width: 200px;
+    height: 310px;
+    margin-left: 20px;
+justify-content: center;
+align-content:center ;
+overflow: hidden;
+}
+.container .card .imgbx img{
+position: absolute;
+width:100%;
+transition: 0.5s;
+}
+.container .card .product-details{
+padding: 5px;
+}
+/*------wishlist,cart,view START--------*/
+.action{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.action li{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color:rgba(128, 128, 128, 0.585);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    cursor: pointer;
+    transform: translateX(60px);
+}
+.action li:nth-child(2){
+    transition-delay: 0.15s;
+}
+.action li:nth-child(3){
+    transition-delay: 0.3s;
+}
+.container .card:hover .action li{
+    transition: 1s;
+    transform: translateX(0px);
+}
+.action li:hover{
+background-color: red;
+color: white;
+}
+.action li span{
+    position: absolute;
+    right: 40px;
+    top:0px;
+    text-align: right;
+    width: 120px;
+    padding: 4px 6px;
+    background-color: rgba(128, 128, 128, 0.4);
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    opacity: 0;
+}
+.action li:hover span{
+opacity: 1;
+}
+/*-------whishlist,cart,view END----------*/
+.container .card:hover .imgbx img{
+transform: scale(1.4);
+}
+.container .card .product-details{
+    border-top: 2px solid rgba(0, 0, 0, 0.122);
+    margin-bottom: 5px;
+    text-align: center;
+}
+.container .card .product-details  h3{
+
+    font-family:   Arial, sans-serif;
+    font-size: 15;
+    margin: 7px 0;
+}
+.container .card .product-details h5{
+    margin: 7px 0;
+}
+.container .card .product-details .price{
+    display: flex;
+    justify-content: space-between;
+}
+.container .card .product-details .price h4 s{
+    color: grey;
+margin: 7px 0;
+}
+.container .card .product-details .price h4 .offer-percent{
+    margin-left: 0px;
+    color: green;
+}
+.container .card .product-details .price .rating .fa{
+    color:red;
+    font-size: 15px;
+}
+.container .card .product-details .price .rating .fa.gray{
+    color:gray;
+}
+
+/* ----------------------------------Top products end----------------------------------------------*/
+
+
+/* ---------------------------------About Us START----------------------------------------------*/
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 900px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 5px;
+    justify-content: center;
+  }
+  .faq{
+    position: relative;
+    left: 300px;
+    top:100px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    width: 870px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+  /* ---------------------------------About Us END----------------------------------------------*/
+
+  

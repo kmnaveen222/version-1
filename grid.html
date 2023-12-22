@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <div class="items">
+            <div class="item1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora ducimus minima mollitia consectetur. Nobis in nemo sed, fuga adipisci sapiente natus dolores. Non error facilis repudiandae itaque temporibus tempore iure maiores, laboriosam molestias. Eaque quam non architecto totam perferendis!</div>
+            <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, earum?</div>
+            <div class="item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quod voluptate eius, minus illum nisi consequatur officia nobis recusandae est assumenda obcaecati placeat laboriosam dolorum exercitationem sit hic delectus ipsa nihil autem doloremque accusantium? Voluptate quae amet repellendus officia, exercitationem quibusdam, tempore ut debitis obcaecati distinctio illum minima fugiat harum? Sint accusamus consequatur facere eius suscipit eveniet ipsum perferendis ut fuga praesentium exercitationem quis quasi expedita, doloribus facilis quo error assumenda? Temporibus cupiditate ipsam, natus cumque neque quos numquam nesciunt nostrum accusamus nam impedit iure repudiandae repellendus quam culpa, veritatis ipsum possimus. Fugiat officia, nam earum commodi sunt adipisci nihil. ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti, molestias eaque quo quibusdam explicabo sequi dolore hic ea voluptas!</div>
+            <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident ratione natus necessitatibus perferendis eaque soluta cum molestiae nisi. Illum hic fugit nam, assumenda minus animi minima voluptatem maxime harum. Accusantium saepe quaerat, autem laudantium id dignissimos cum perspiciatis reprehenderit, a vel minus deserunt suscipit totam cumque? Harum sit, amet quas animi vitae numquam quaerat molestias expedita est excepturi natus. Ipsam, numquam! Explicabo fugiat suscipit facere aliquam nesciunt accusantium eligendi beatae, similique molestias expedita sequi veniam adipisci facilis saepe quisquam officiis amet, fuga corrupti ab, quo commodi vero eos. Blanditiis rem laboriosam repellendus dignissimos quo beatae omnis labore dolorum eum.</div>
+            <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, placeat alias illum atque excepturi, mollitia est assumenda voluptas in, libero consequatur natus iste nam officia? Magni praesentium suscipit, omnis quam enim fuga ratione nihil quas accusamus atque quae nisi, similique earum itaque dolores odit, facilis vero sapiente? Deleniti fugit earum doloribus reiciendis, iusto quaerat magnam atque voluptas vel voluptatem dolorem veritatis iure? Nobis quisquam magni suscipit, consequatur labore nihil dicta!</div>
+            <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, placeat alias illum atque excepturi, mollitia est assumenda voluptas in, libero consequatur natus iste nam officia? Magni praesentium suscipit, omnis quam enim fuga ratione nihil quas accusamus atque quae nisi, similique earum itaque dolores odit, facilis vero sapiente? Deleniti fugit earum doloribus reiciendis, iusto quaerat magnam atque voluptas vel voluptatem dolorem veritatis iure? Nobis quisquam magni suscipit, consequatur labore nihil dicta!</div>
+
+        </div>
+    </body>
+    <style>
+        body{
+            background: rgb(32, 30, 30);
+        }
+        .items{
+            color: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            grid-auto-rows: minmax(100px,auto);
+            grid-gap: 20px;
+            
+        }
+        .item1{
+            background-color: rgba(255, 105, 180, 0.565);
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        .item2{
+            background-color: rgba(255, 105, 180, 0.565);
+            border: 2px solid blue;
+            grid-row: span 2;
+            padding: 10px;
+        }
+    </style>
+</html>

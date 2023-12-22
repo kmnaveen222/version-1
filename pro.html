@@ -1,0 +1,229 @@
+<html>
+<body>
+    <div class="navbar">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a>
+                <ul class="store">
+                    <li><a href="#" >Mens</a></li>
+                    <li><a href="#"> Womens</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+<div class="con">
+    <div class="signup">
+<form>
+<fieldset>
+    <legend>Sign-up</legend>
+        <label >First name:</label>
+        <input type="text" name="Fname" id="name" placeholder=" First name" required><br>
+        <label for="Lname">Last name:</label>
+        <input type="text" name="Lname" id="Lname" placeholder=" Last name" required><br>
+        <label for="email">Email id:</label>
+        <input type="text" name="ename" id="email" placeholder=" Email id" required><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" class="check"> Male
+        <input type="radio" name="gender" value="female" class="check"> Female
+        <label for="pwd">password:</label>
+        <input type="password" name="password:" id="pwd" placeholder=" password" required><br>
+        <label for="cpwd">confirm password:</label>
+        <input type="password" name="confirm password" id="cpwd" placeholder=" confirm password" required><br>
+        <input type="checkbox" required class="check">By creating an account you agree to our <a href="#" >Terms & Privacy</a><br>
+        <input type="submit" name="signup" value="Sign-up" id="submit"><br>
+         Have an account?<a href="./login.html"> Login Here</a>
+</fieldset>
+</form>
+</div>
+<table border="3px">
+    <tr><th colspan="5"  class="head"><h2>PRODUCTS</h2></th></tr>
+    <tr class="head1">
+        <th>BRAND</th>
+        <th>TYPE</th>
+        <th>SIZE</th>
+        <th>ORIGINAL PRICE</th>
+        <th>DISCOUNT PRICE</th>
+    </tr>
+    <tr>
+        <th>Peter England</th>
+        <td>Formal Shirts</td>
+        <td>M,L,XL,XXL</td>
+        <td>2000</td>
+        <td>1800</td>
+    </tr>
+    <tr>
+        <th>Arrow</th>
+        <td>Formal shirt</td>
+        <td>L,XL,XXL</td>
+        <td>2549</td>
+        <td>1990</td>
+    </tr>
+    <tr>
+        <th>Van Heusen</th>
+        <td>Formal shirt</td>
+        <td>S,M,L,XL</td>
+        <td>1799</td>
+        <td>1599</td>
+    </tr>
+    <tr>
+        <th>Louis Philippe</th>
+        <td>Formal shirt</td>
+        <td>M,L,XL,XXL,XXXL</td>
+        <td>1940</td>
+        <td>1590</td>
+    </tr>
+    <tr>
+        <th>Roadster</th>
+        <td>Casual Shirt</td>
+        <td>S,M,L,XL</td>
+        <td>1990</td>
+        <td>1890</td>
+    </tr>
+    <tr>
+        <th>Allen Solly</th>
+        <td>Casual Shirt</td>
+        <td>S,M,L,XL</td>
+        <td>1356</td>
+        <td>1149</td>
+    </tr>
+    <tr>
+        <th>HRX</th>
+        <td>T-shirt</td>
+        <td>S,M,L</td>
+        <td>559</td>
+        <td>449</td>
+    </tr>
+    <tr>
+        <th>Puma</th>
+        <td>T-shirt</td>
+        <td>S,M,L,XL</td>
+        <td>759</td>
+        <td>849</td>
+    </tr>
+    <tr>
+        <th>max</th>
+        <td>T-shirt</td>
+        <td>S,M,L,XL,XXL</td>
+        <td>799</td>
+        <td>799</td>
+    </tr>
+    <tr>
+        <th>U.S. Polo Assn</th>
+        <td>T-shirt</td>
+        <td>S,M,L,XL</td>
+        <td>1599</td>
+        <td>1499</td>
+    </tr>
+    
+</table>
+</div>
+
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .signup{
+        margin-right: -900px ;
+    }
+    .con{
+        display: flex;
+    }
+label{
+    display: flex;
+    margin-top: 2px;
+}
+input{
+    padding: 7px;
+    width: 300px;
+    margin: 10;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.359);
+}
+.check{
+    width: 19;
+    margin: 9;
+    box-shadow: 0px 0px;
+}
+legend{
+    background-image:linear-gradient(45deg,#df4881, #c430d7) ;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    font-size:x-large;
+}
+fieldset{
+    background-color: rgba(0, 0, 0, 0.413);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left:50px ;
+    margin-right:1100px;
+}
+#submit{
+    background-image:linear-gradient(45deg,#df4881, #c430d7) ;
+    border-radius: 20px;
+}
+table{
+    margin-right: 150px;
+    margin-top: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+td,th{
+    background-color: rgba(0, 255, 145, 0.42);
+    padding: 10px;
+}
+.head{
+    color: white;
+    background-image:linear-gradient(45deg,#df4881, #c430d7) ;
+    }
+.head1{
+    background-color: rgba(0, 128, 0, 0.545);
+}
+
+/*-------------------------------------------menubar start----------------------------------------------------*/
+.navbar{
+    position: sticky;
+    top: 0;
+}
+.nav{
+    
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+    }
+    .nav li a{
+        
+        text-decoration: none;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        width: 150px;
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    .nav li a:hover{
+        background-color: skyblue;
+        border-radius: 0px;
+        color: white;
+    }
+    .store{
+        list-style-type: none;
+        display: none;
+    }
+    .nav li:nth-child(2):hover .store{
+        display: block;
+    }
+    /*---------------------------------------------menubar END-----------------------------------------------*/
+</style>
+</html>

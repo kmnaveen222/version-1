@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <!-------------------------------------------------------------------------------menubar start------------------------------------------------------------>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/young_fashios__1_-removebg-preview.png" alt="logo" width="125px">
+        </div>
+
+<div class="nav1">
+    <ul class="nav">
+        <li><a href="young fashios.html">Home</a></li>
+        <li><a href="#">Store</a>
+            <ul class="store">
+                <li><a href="mens.html" >Mens</a></li>
+                <li><a href="#"> Womens</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- <div class="login-signup">
+        <a href="#">  <i class="fa fa-cart-arrow-down " id="cart"></i></a>
+        <a href="./login.html"><button id="login">Login</button></a>
+        </div> -->
+    </ul>
+</div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------menubar END--------------------------------------------------------------->
+
+    <form class="tbl" onsubmit="return validate()">
+        <div class="bck">
+    <table  align="center">
+        <tr><td colspan="2" align="center" class="signup"> Login</td>
+        <tr>
+            <td><label for="email">Email id:</label></td>
+            <td><input type="text" name="ename" id="email" placeholder=" Email id" ></td>
+        </tr>
+        
+        <tr>
+            <td><label for="pwd">password:</label></td>
+            <td><input type="password" name="password:" id="pwd" placeholder=" password" ></td>
+        </tr>
+        <tr><td></td>
+            <td height="40px" align="left"><input type="button" name="signup" value="Login" id="submit" onclick="return validate()"></td></tr>
+        <tr align="center"><td colspan="2" class="login">Create an account - <a href="./register page.html"> Register Here</a></td></tr>
+    </table>
+</div>
+</form>
+<!------------------------------------------------------popup start------------------------------------------------------------------>
+
+<div class="popup" id="popup">
+    <img src="/image/tick.png" alt="tick img">
+    <h2>Thank You!</h2>
+    <p>Your details has been successfully submitted.Thanks</p>
+    <a  href="young fashios.html"><button type="button" >OK</button></a>
+</div>
+<!------------------------------------------------------popup end------------------------------------------------------------------>
+
+
+<script type="text/javascript">
+    // let popup=document.getElementById("popup");
+    // function openpopup(){
+    //     popup.classList.add("open-popup");
+    // }
+    // function closepopup(){
+    //     popup.classList.remove("open-popup");
+    // }
+
+    function validate()
+    {
+var email= document.getElementById("email").value;
+var password= document.getElementById("pwd").value;
+
+var at=email.indexOf("@");
+var dot=email.lastIndexOf(".");
+if(at<1||dot<at+2||dot+2>=email.length)
+{
+alert("enter valid email id");
+return false;
+}
+if(password == "" )
+{
+alert("Enter a password");
+return false;
+}
+
+let popup=document.getElementById("popup");
+if(!(at<1||dot<at+2||dot+2>=email.length)&&password!=""){
+        popup.classList.add("open-popup");
+}
+else{
+        popup.classList.remove("open-popup");
+}
+}
+    </script>
+    </body>
+    </html>

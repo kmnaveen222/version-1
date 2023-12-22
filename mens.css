@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+
+
+
+/*-------------------------------------------menubar start----------------------------------------------------*/
+
+.navbar{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav{
+        display: flex;
+        list-style-type: none;
+        
+    }
+    .nav li a{
+        
+        text-decoration: none;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        width: 100px;
+        margin-top: 3px;
+        padding: 14px 0px;
+        font-size: 20px;
+    }
+    .nav li a:hover{
+        border:2px solid #c430d7;
+        border-radius: 0px;
+        color: white;
+    }
+    .store{
+        list-style-type: none;
+        display: none;
+    }
+    .nav li:nth-child(2):hover .store{
+        display: block;
+    }
+
+
+    a button{
+    
+        margin-left: 10px;
+    }
+    #login:hover{
+        color: white;
+        background-color: black;
+        border:2px solid white;
+        transition: 0.4s ;
+     }
+     #signup:hover{
+        color: black;
+     }
+     #signup{
+    text-decoration: none;
+    background-image:linear-gradient(45deg,#df4881, #c430d7) ;
+    color:white;
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-color: black;
+ }
+#login{
+    text-decoration: none;
+    
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+ }
+ .login-signup{
+    
+    position: relative;
+    top: 9px;
+    left: 680px;
+ }
+ #cart{
+    position: relative;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+}
+/*---------------------------------------------menubar END-----------------------------------------------*/
+
+
+/* ----------------------------------products----------------------------------------------*/
+
+.img-size{
+    width: 200px;
+    height: 250px;    
+}
+
+.row{
+    text-align: center;
+    display: flex;
+    width: 100%;
+     margin-left: 60px;
+     margin-top: 5%;
+     font-family: sans-serif;
+     letter-spacing: .5px;
+}
+.col-md-3{
+    border: 2px solid black;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.product-details h4{
+   font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.product-details h3{
+    font-size:15;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.product-details h5{
+    font-size: 10;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.product-details h4 s{
+    color: gray;
+}
+.offer-percent{
+    color: green;
+}
+.buy-pro{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color: rgba(255, 68, 0, 0.699);
+    visibility: hidden;
+    cursor: pointer;
+}
+.col-md-3:hover {
+    box-shadow: 5px 5px 5px 5px gray;
+    transform: scale(1.1);
+}
+.col-md-3:hover .buy-pro{
+    transform: scale(1.1);
+    visibility: visible;
+transition: 1s;
+}
+/* ----------------------------------products end----------------------------------------------*/
+
+/*--------------------------------------- diwali offer front show ---------------------------------------*/
+.bgimg img{
+    height: 500px;
+    width: 1500px;
+    margin: 30;
+  }
+  .bgimg{
+    position: relative;
+    color: rgba(255, 255, 255, 0.963);
+    
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  .middle {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    
+  }
+  .middle-hd{
+    margin-bottom: 20px;
+  }
+  .middle h1{
+margin: 20px;
+  }
+  hr {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;}
+    .offer-day sup{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.offer-day{
+font-family: Arial Black;
+color: yellow;
+}
+/*--------------------------------------- diwali offer front show end---------------------------------------*/

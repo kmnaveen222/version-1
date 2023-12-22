@@ -1,0 +1,140 @@
+<!-- <html>
+    <body>
+        <h1>function in JS</h1>
+        <script> 
+            // let a=20;  
+            // if(a>10){  
+            //     document.write("If statement<br/>");
+            // document.write("value of a is greater than 10");  
+            // }  
+
+
+            
+// let a=prompt("enter a num");  
+// document.write("If-else statement<br>");
+// if(a%2==0){  
+// document.write("a is even number");  
+// }  
+// else{  
+// document.write("a is odd number");  
+// }  
+
+
+
+// var a=prompt("enter a num");  
+// document.write("else-if statement<br>");
+// if(a==10){  
+// document.write("a is equal to 10");  
+// }  
+// else if(a==20){  
+// document.write("a is equal to 20");  
+// }  
+// else{  
+// document.write("a is not equal to 10 or 20");  
+// }  
+//  
+
+
+// let a = 2;
+// document.write("switch statement<br>");
+// switch (a) {
+//     case 1:
+//         a = 'one';
+//         break;
+//     case 2:
+//         a = 'two';
+//         break;
+//     default:
+//         a = 'not found';
+//         break;
+// }
+// document.write(" value of a is "+a);
+
+
+// document.write("For loop<br>");
+// for (i=1; i<=5; i++)  
+// {  
+// document.write(i + " ")  
+// } 
+
+
+// let i=1; 
+// document.write("while loop<br>");
+// while (i<=5)  
+// {  
+// document.write(i + " ");  
+// i++;  
+// } 
+
+
+
+
+// let i=1;  
+// document.write("do-while loop<br>");
+// do{  
+// document.write(i + " ");  
+// i++;  
+// }while (i<=5);  
+
+
+// function Message(firstName, lastName) {
+// document.write("Hello " + firstName +" "+ lastName);
+// }
+// Message("Naveen", "KM");
+//    </script>  
+//     </body>
+// </html> -->
+<html><body>
+
+<form  name="myform" onsubmit="return validate()">
+    
+<table  align="center">
+    <tr><td colspan="2" align="center" class="signup"> Sign-up</td></tr>
+    <tr>
+        <td><label for="name">First name:</label></td>
+        <td><input type="text" name="Fname" id="name" placeholder=" First name" ></td>
+    </tr>
+    <tr>
+        <td><label for="Lname">Last name:</label></td>
+        <td><input type="text" name="Lname" id="Lname" placeholder=" Last name" ></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email id:</label></td>
+        <td><input type="text" name="ename" id="email" placeholder=" Email id" ></td>
+    </tr>
+    
+    <tr>
+        <td><label for="pwd">password:</label></td>
+        <td><input type="password" name="password:" id="pwd" placeholder=" password" ></td>
+    </tr>
+    <tr>
+        <td><label for="cpwd">confirm password:</label></td>
+        <td><input type="password" name="confirm password" id="cpwd" placeholder=" confirm password" ></td>
+    </tr>
+    <tr><td></td>
+        <td height="40px" align="left"><button>Submit</button><!--<input type="submit" name="signup" value="Sign-up" id="submit">--></td></tr>
+    <tr align="center"><td colspan="2" class="login">Have an account?<a href="./login.html"> Login Here</a></td></tr>
+</table>
+
+</form>
+
+
+
+<script type="text/javascript">
+function validate()
+{
+var name= document.getElementById("name");
+var lname= document.getElementById("Lname");
+var email= document.getElementById("email");
+var password= document.getElementById("pwd");
+var conpassword= document.getElementById("cpwd");
+if(name.value == "")
+{
+    alert("Enter Your First Name");
+    return false;
+}
+
+}
+</script>
+</body>
+</html>

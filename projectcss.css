@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+
+
+
+/*-------------------------------------------menubar start----------------------------------------------------*/
+
+.nav{
+    position: relative;
+    left: 500px;
+        display: flex;
+        list-style-type: none;
+        
+    }
+    .nav li a{
+        
+        text-decoration: none;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        width: 120px;
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    .nav li a:hover{
+        background-color: skyblue;
+        border-radius: 0px;
+        color: white;
+    }
+    .store{
+        list-style-type: none;
+        display: none;
+    }
+    .nav li:nth-child(2):hover .store{
+        display: block;
+    }
+
+
+    a button{
+    
+        margin-left: 30px;
+    }
+    #login:hover{
+        color: white;
+        background-color: black;
+        border:2px solid white;
+        transition: 0.4s ;
+     }
+     #signup:hover{
+        color: black;
+     }
+     #signup{
+    text-decoration: none;
+    background-image:linear-gradient(45deg,#df4881, #c430d7) ;
+    color:white;
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-color: black;
+ }
+#login{
+    text-decoration: none;
+    
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+ }
+    /*---------------------------------------------menubar END-----------------------------------------------*/
+
+
+
+/*------------------------------------------------slide show image-------------------------------------------*/
+/* .slider{
+    margin-left: 70px;
+    width: 1345px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 1350px;
+    height: 600px;
+}
+.nav-manual{
+    position:absolute;
+    width: 1350px;
+    margin-top: -2395px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:hover{
+    background-color: #40D3DC;
+    transition: 0.5s;
+}
+#radio1:checked~ .slide1{
+    margin-left: 0;
+}
+#radio2:checked~ .slide1{
+    margin-left: -20%;
+}
+#radio3:checked~ .slide1{
+    margin-left: -40%;
+}
+#radio4:checked~ .slide1{
+    margin-left: -60%;
+}
+.nav-auto{
+position: absolute;
+display: flex;
+width: 1350px;
+justify-content: center;
+margin-top: 605px;
+}
+.nav-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 1s;
+}
+#radio1:checked~ .nav-auto .auto-btn1{
+background-color: #40D3DC;
+}
+#radio2:checked~ .nav-auto .auto-btn2{
+    background-color: #40D3DC;
+}
+#radio3:checked~ .nav-auto .auto-btn3{
+    background-color: #40D3DC;
+}
+#radio4:checked~ .nav-auto .auto-btn4{
+ background-color: #40D3DC;   
+} */
+/*--------------------------------------------slide show image END-----------------------------------------------------------*/
+
